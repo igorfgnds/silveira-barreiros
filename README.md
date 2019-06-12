@@ -1,6 +1,5 @@
 # Silveira Barreiros Advogados Associados
-Site institucional do escritório de advocacia Silveira Barreiros.<br>
-Projeto freelancer desenvolvido por @igorfgnds.
+Site institucional desenvolvido para o escritório de advocacia Silveira Barreiros.
 
 ## Execute
 ```sh
