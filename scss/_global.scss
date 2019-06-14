@@ -7,9 +7,9 @@ html {
 }
 
 hr.divider {
-  max-width: 3.25rem;
-  border-width: 0.2rem;
-  border-color: $primary;
+  max-width: 5rem;
+  border-width: 1px;
+  border-color: #d0d0d0;
 }
 
 hr.light {
@@ -25,10 +25,95 @@ hr.light {
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
-  border: none;
   border-radius: 10rem;
+}
+
+.btn-primary {
+  background: transparent;
+  border: 1px solid $white;
+
+  &:hover, &:focus, &:active {
+    box-shadow: none !important;
+    background: rgba(255, 255, 255, .1) !important;
+    border-color: $white !important;
+  }
+}
+
+.btn-secondary {
+  &:hover {
+    color: $secondary !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    border-color: $secondary !important;
+  }
+  &:focus, &:active {
+    color: $white !important;
+    box-shadow: none !important;
+    background: $secondary !important;
+    border-color: $secondary !important;
+  }
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  animation: shake 6s cubic-bezier(.36,.07,.19,.97) both;
+  animation-iteration-count: infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  text-decoration: none !important;
+
+  div {
+    height: 48px;
+    width: 240px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 5px 15px;
+    display: block;
+    color: #000;
+    font-size: 13px;
+    font-family: sans-serif;
+    background-color: #e1ffc7;
+    border-radius: 5px 5px 0 5px;
+    position: absolute;
+    right: 70px;
+    bottom: -60px;
+    transition: .3s;
+  }
+
+  &:hover {
+    div {
+      //width: 250px;
+      opacity: 1;
+      bottom: 35px;
+    }
+  }
 }
 
 .page-section {
   padding: 8rem 0;
+}
+
+.bg-light {
+  background-color: #f1f4f5 !important;
+}
+
+@keyframes shake {
+  1%, 9% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  2%, 8% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  3%, 5%, 7% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  4%, 6% {
+    transform: translate3d(4px, 0, 0);
+  }
 }

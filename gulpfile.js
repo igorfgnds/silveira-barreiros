@@ -38,9 +38,6 @@ function modules() {
   // Bootstrap JS
   var bootstrap = gulp.src('./node_modules/bootstrap/dist/js/**/*')
     .pipe(gulp.dest('./vendor/bootstrap/js'));
-  // Font Awesome
-  var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
-    .pipe(gulp.dest('./vendor'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./vendor/jquery-easing'));
@@ -53,7 +50,7 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrap, fontAwesome, jquery, jqueryEasing, magnificPopup);
+  return merge(bootstrap, jquery, jqueryEasing, magnificPopup);
 }
 
 // CSS
@@ -67,7 +64,6 @@ function css() {
     }))
     .on("error", sass.logError)
     .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
       cascade: false
     }))
     .pipe(gulp.dest("./css"))

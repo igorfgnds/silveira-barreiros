@@ -7,13 +7,12 @@
     },
     "description": "Site da empresa Silveira Barreiros Advogados Associados.",
     "homepage": "https://silveirabarreiros.com.br",
-    "author": "",
+    "author": "igorfgnds",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/igorfgnds/silveira-barreiros.git"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.8.1",
         "bootstrap": "4.3.1",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
@@ -30,5 +29,8 @@
         "gulp-sass": "4.0.2",
         "gulp-uglify": "3.0.2",
         "merge-stream": "^1.0.1"
-    }
+    },
+    "browserslist": [
+        "last 2 versions"
+    ]
 }
