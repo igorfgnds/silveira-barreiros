@@ -58,7 +58,7 @@ hr.light {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  animation: shake 6s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 8s cubic-bezier(.36,.07,.19,.97) both;
   animation-iteration-count: infinite;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
@@ -79,7 +79,7 @@ hr.light {
     border-radius: 8px;
     position: absolute;
     right: 70px;
-    bottom: -60px;
+    bottom: -100px;
     transition: .3s;
   }
 

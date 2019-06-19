@@ -92,7 +92,7 @@
   <!-- Serviços -->
   <section class="page-section" id="servicos">
     <div class="container-fluid">
-      <h2 class="h3 text-primary text-center font-weight-bold mt-0">Nós temos que você precisa!</h2>
+      <h2 class="h3 text-primary text-center font-weight-bold">Nós temos que você precisa!</h2>
       <hr class="divider mt-3 mb-5">
 
       <div class="row">
@@ -260,7 +260,7 @@
   <!-- Equipe -->
   <section class="page-section bg-light" id="equipe">
     <div class="container text-center">
-      <h2 class="h3 text-primary mt-0 font-weight-bold">Os melhores profissionais</h2>
+      <h2 class="h3 text-primary font-weight-bold">Os melhores profissionais</h2>
       <hr class="divider mt-3 mb-5">
       <div class="row">
         <div class="col-md-4 offset-md-2 text-center mt-4">
@@ -284,38 +284,59 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="h3 text-primary mt-0 font-weight-bold">Conte-nos o seu problema</h2>
+          <h2 class="h3 text-primary font-weight-bold">Conte-nos o seu problema</h2>
           <hr class="divider mt-3 mb-5">
           <p class="text-muted mb-5">Entre em contato através do formulário abaixo.<br/>Retornaremos o mais breve possível!</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-4 text-center">
-          <i class="fas fa-phone fa-3x mb-3 text-primary"></i>
-          <div>+55 (48) 00000-0000</div>
-        </div>
-        <div class="col-lg-4 text-center">
-          <i class="fas fa-whatsapp fa-3x mb-3 text-primary"></i>
-          <div>+55 (48) 99999-9999</div>
-        </div>
-        <div class="col-lg-4 text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-primary"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-lg-6">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" id="nome" placeholder="Nome" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="telefone" placeholder="Telefone" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="mensagem" placeholder="Escreva sua mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary btn-xl d-block m-auto">Enviar mensagem</button>
+          </form>
         </div>
       </div>
+      <h3 class="h5 text-primary text-center font-weight-bold mb-5">Outras formas de contato</h3>
+      <div class="row mb-5 pb-5">
+        <div class="col-lg-4 text-center">
+          <img class="mb-3" src="img/telefone.svg" alt="Telefone" width="50px" />
+          <div class="text-black-50">+55 (48) 00000-0000</div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img class="mb-3" src="img/celular.svg" alt="Celular" width="50px" />
+          <div class="text-black-50">+55 (48) 9 9607-0795</div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img class="mb-3" src="img/email.svg" alt="E-mail" width="50px" />
+          <a class="d-block text-black-50" href="mailto:contato@silveirabarreiros.com.br">contato@silveirabarreiros.com.br</a>
+        </div>
+      </div>
+      <h3 class="h5 text-primary text-center font-weight-bold mb-5">Ou se preferir, venha nos visitar</h3>
     </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14144.499948833576!2d-48.615233484690755!3d-27.589654374103066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952737d9dd136de3%3A0xcd50d8b08d52fc70!2sSilveira+Barreiros+Advogados+Associados!5e0!3m2!1spt-BR!2sbr!4v1560962943060!5m2!1spt-BR!2sbr" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
   </section>
 
   <a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=5548996070795&text=Ol%C3%A1!%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site..." target="_blank">
     <img src="img/whatsapp.svg" alt="WhatsApp Silveira Barreiros Advogados Associados" />
-    <div>Olá, tudo bem? Fale conosco pelo WhatsApp agora mesmo!</div>
+    <div>Olá, tudo bem? Tire suas dúvidas agora mesmo pelo WhatsApp!</div>
   </a>
 
   <!-- Footer -->
-  <footer class="bg-light py-5">
+  <footer class="bg-primary py-5">
     <div class="container">
-      <div class="small text-center text-muted">Todos os direitos reservados &copy; 2019 - Silveira Barreiros Advogados Associados</div>
+      <div class="small text-center text-white">Todos os direitos reservados &copy; 2019 - Silveira Barreiros Advogados Associados</div>
     </div>
   </footer>
 
