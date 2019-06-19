@@ -1,21 +1,28 @@
 // Masterhead
 
 .masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - #{$navbar-height});
+  padding-top: 12rem;
+  padding-bottom: calc(13rem - #{$navbar-height});
   background: linear-gradient(to bottom, #{fade-out(#2A7096, .7)} 0%,#{fade-out(#2A7096, .5)} 100%), url('../img/bg-masthead.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   h1 {
-    max-width: 580px;
-    font-size: 2.25rem;
+    width: 0;
+    max-width: 270px;
+    font-size: 1.6rem;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 1px solid $white; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+    animation: typing 3s steps(40, end) 3s forwards, blink-caret .75s step-end infinite;
+  }
+  @include media-breakpoint-up(sm) {
+    h1 {
+      font-size: 2rem;
+      max-width: 330px;
+    }
   }
   @include media-breakpoint-up(lg) {
     height: 100vh;
@@ -27,10 +34,12 @@
     }
     h1 {
       font-size: 3rem;
+      max-width: 500px;
     }
   }
   @include media-breakpoint-up(xl) {
     h1 {
+      max-width: 580px;
       font-size: 3.5rem;
     }
   }
@@ -38,7 +47,7 @@
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
+  from { width: 0}
   to { width: 100% }
 }
 

@@ -10629,17 +10629,17 @@ hr.light {
 }
 
 .btn-whatsapp div {
-  height: 48px;
+  height: 50px;
   width: 240px;
   opacity: 0;
   overflow: hidden;
-  padding: 5px 15px;
+  padding: 6px 15px;
   display: block;
   color: #000;
   font-size: 13px;
   font-family: sans-serif;
-  background-color: #e1ffc7;
-  border-radius: 5px 5px 0 5px;
+  background-color: rgba(236, 236, 236, 0.8);
+  border-radius: 8px;
   position: absolute;
   right: 70px;
   bottom: -60px;
@@ -10649,7 +10649,7 @@ hr.light {
 
 .btn-whatsapp:hover div {
   opacity: 1;
-  bottom: 35px;
+  bottom: 0;
 }
 
 .page-section {
@@ -10711,18 +10711,18 @@ hr.light {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #6c757d;
+  color: #fff;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 0.875rem;
-  padding: 0.75rem 0;
+  font-size: 1rem;
+  padding: 1.5rem 0;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
   color: #fff;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #mainNav {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -10740,6 +10740,7 @@ hr.light {
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -10779,9 +10780,18 @@ hr.light {
   }
 }
 
+#mainNav .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+#mainNav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 72px);
+  padding-top: 12rem;
+  padding-bottom: calc(13rem - 72px);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 112, 150, 0.3)), to(rgba(42, 112, 150, 0.5))), url("../img/bg-masthead.jpg");
   background: linear-gradient(to bottom, rgba(42, 112, 150, 0.3) 0%, rgba(42, 112, 150, 0.5) 100%), url("../img/bg-masthead.jpg");
   background-position: center;
@@ -10791,8 +10801,9 @@ hr.light {
 }
 
 .masthead h1 {
-  max-width: 580px;
-  font-size: 2.25rem;
+  width: 0;
+  max-width: 270px;
+  font-size: 1.6rem;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 1px solid #fff;
@@ -10801,8 +10812,15 @@ hr.light {
   /* Keeps the content on a single line */
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
-  -webkit-animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  -webkit-animation: typing 3s steps(40, end) 3s forwards, blink-caret 0.75s step-end infinite;
+  animation: typing 3s steps(40, end) 3s forwards, blink-caret 0.75s step-end infinite;
+}
+
+@media (min-width: 576px) {
+  .masthead h1 {
+    font-size: 2rem;
+    max-width: 330px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -10817,11 +10835,13 @@ hr.light {
   }
   .masthead h1 {
     font-size: 3rem;
+    max-width: 500px;
   }
 }
 
 @media (min-width: 1200px) {
   .masthead h1 {
+    max-width: 580px;
     font-size: 3.5rem;
   }
 }
